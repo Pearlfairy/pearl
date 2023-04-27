@@ -1,0 +1,75 @@
+body { background-color: black;
+	    margin: 5%;
+	    padding: 14px 14x;
+}
+#title { text-align: center;
+	       text-shadow: 5px 5px 10px violet;
+	       font-size: 10vh;
+	       color: indigo;
+}
+img { display: inline-block;
+	   width: 30%;
+}
+#caption { font-size: 17px;
+	        font-family: sans-serif;
+	        color: magenta;
+}
+div#welcome { background-color: white;
+	                box-shadow: 30px 30px 30px pink;
+	                font-family: serif;
+	                padding:25px 25px;
+	                margin: 10px;
+	                margin-top: 50px;
+}
+h1.title2 { font-size: 30px;
+	         color: purple;
+	         text-align: center;
+	         text-shadow: 4px 4px 6px indigo;
+}
+#about.html { text-decoration: none;
+	             color: white;
+}
+.topnav {background-color: purple;
+	      overflow: hidden;
+}
+.topnav a {float : left;
+	        color: pink;
+	        text-align: center;
+	        padding: 14px 16px;
+	        text-decoration: none;
+	        font-size: 17px;
+}
+.topnav a:hover {background-color: indigo;
+	              color: white;
+}
+.topnav a.active {background-color: orange;
+	               color: white;
+}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

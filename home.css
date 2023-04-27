@@ -1,0 +1,277 @@
+@import 'nav.css';
+@import 'product.css';
+@import 'men.css';
+@import 'accesories.css';
+@import 'swimwears.css';
+
+.hero-section { 
+	width: 100%;
+	height: calc(100vh - 120px);
+	background-image: url("hero.jpg");
+	opacity: none;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-section .logo { 
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
+.hero-section .sub-heading {
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+	text-transform: capitalize;
+	font-size: 35px;
+	font-weight: 300;
+}
+.logo {
+	opacity: 0.5;
+
+}
+		
+.product {
+	position: relative;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.product-category { 
+	padding: 0 10vw;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}
+
+.product-container {
+	padding: 0 10vw;
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	float: left;
+	width: 250px;
+	padding: 5px;
+}
+
+.product-container::-webkit-scrollbar {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	height: 20px;
+	align-items: center;
+}
+.body { 
+	background-color: black;
+}
+
+.product-card {
+	flex: 0 0 auto;
+	width: 250px;
+	height: 450px;
+	margin-right: 40px;
+	
+}
+
+.product-image {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	display: table;
+	clear: both;
+}
+.product-thumb {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.discount-tag { 
+	position: absolute;
+	background: black;
+	padding: 5px;
+	border-radius: 10px;
+	color: purple;
+	right: 10px;
+	top: 10px;
+	text-transform: capitalize;
+}
+
+.card-btn { 
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	width: 90%;
+	text-transform: capitalize;
+	border: none;
+	outline: none;
+	background: white;
+	border-radius: 5px;
+	transition: 0.5s;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.product-card:hover .card-btn {
+	opacity: 1;
+}
+
+.card-btn:hover {
+	background: #efefef;
+}
+
+.product-info { 
+	width:100%;
+	height: 100px;
+	padding-top: 10px;
+}
+
+.product-brand { 
+	text-transform: uppercase;
+}
+.product-short-deas {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	opacity: 0.5;
+	text-transform: capitalize;
+	margin: 5px 0;
+}
+
+.price { 
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.actual-price {
+	margin-left: 20px;
+	opacity: 0.5;
+	text-decoration: line-trough;
+}
+	
+	
+.div { float: left;
+}
+.pre-btn, .nxt-btn {
+	border: none;
+	width: 10vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient (90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+	cursor: pointer;
+	z-index: 8;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Bitter);
+
+$bg: hsla(210, 50%, 40%, 1);
+$duration: 0.5s;
+
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+a, a:visited{
+  color: #76b7f7;
+}
+
+body{
+  background-color: green;
+  color: green;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bitter", serif;
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  align-items: center;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  
+}
+
+.deck{
+  display: flex;
+}
+
+.card-space{
+}
+
+.card-space:hover .card{
+  transform: rotateY(-180deg);
+}
+
+.card{
+  border-radius: 10px;
+  height: 300px;
+  margin: 10px;
+  width: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all $duration ease;
+  & h1{
+    margin-top: 5px;
+	  color: black;
+  }
+  & p{
+    margin-top: 0px;
+  }
+}
+
+.face{
+  border-radius: 10px;
+  box-shadow: black;
+  & h1{
+    padding: 0;
+  }
+  background-color: purple;
+  padding: 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  &.front{
+    text-align: center;
+    z-index: 20;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    
+  }
+  &.back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

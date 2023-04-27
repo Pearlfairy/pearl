@@ -1,0 +1,294 @@
+* { 
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+}
+
+body { 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+.header {
+	height: 80px;
+	width:70%;
+	background-color: purple;
+	border-radius: cover;
+	margin: 30px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.header.logo {
+	font-size: 30px;
+	font-weight: bold;
+	color: purple;
+}
+
+.cart  {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	padding:7px 10px;
+	border-radius: cover;
+	width: 80px;
+}
+
+.cart i { 
+	color: purple;
+}
+
+.cart p {
+	height: 22px;
+	width: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: cover;
+	background-color: black;
+	color: purple;
+	float:left;
+}
+	
+.container {
+	display: flex;
+	width: 70%;
+	margin-bottom: 30px;
+}
+
+#root { 
+	width: 60%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.sidebar { 
+	width: 40%;
+	border-radius: 5px;
+	background-color: #eee;
+	margin-left: 20px;
+	padding: 15px;
+	text-align: center;
+}
+	
+.head { 
+	    background-color: black;
+	    border-radius: 3px;
+	    height: 40px;
+	    padding: 10px;
+	    margin-bottom: 20px;
+	    color: white;
+	    display: flex;
+	    align-items: center;
+}
+
+.foot { 
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+	padding: 10px 0px;
+	border-top: 1px solid #333;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.img-box {
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.images {
+	max-width: 90%;
+	max-height: 90%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.bottom {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 110px;
+}
+
+h2  { 
+	font-size: 20px;
+	color: purple;
+}
+
+button { 
+	width: 80%;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	padding: 7px 25px;
+	cursor: pointer;
+	color: white;
+	
+}
+
+button:hover {
+	background-color: purple;
+}
+
+.cart-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: black;
+	border-bottom: 1px solid  purple;
+	border-radius: 3px;
+	margin: 10px 10px;
+}
+
+.row-img {
+	width: 40px;
+	height: 40px;
+   border-radius: 40px;
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rowing { 
+	max-width: 43px;
+	max-height: 43px;
+	border-radius: 50%;
+}
+
+.fa-trash:hover { 
+	cursor: pointer;
+	color: black;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Bitter);
+
+$bg: hsla(210, 50%, 40%, 1);
+$duration: 0.5s;
+
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+a, a:visited{
+  color: #76b7f7;
+}
+
+body{
+  background-color: $bg;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bitter", serif;
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  align-items: center;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  
+}
+
+.deck{
+  display: flex;
+}
+
+.card-space{
+}
+
+.card-space:hover .card{
+  transform: rotateY(-180deg);
+}
+
+.card{
+  border-radius: 10px;
+  height: 300px;
+  margin: 10px;
+  width: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all $duration ease;
+  & h1{
+    margin-top: 5px;
+	  color: black;
+  }
+  & p{
+    margin-top: 0px;
+  }
+}
+
+.face{
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+  & h1{
+    padding: 0;
+  }
+  background-color: purple;
+  padding: 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  &.front{
+    text-align: center;
+    z-index: 20;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    
+  }
+  &.back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	

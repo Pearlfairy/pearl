@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+		<title>FASHION</title>
+		<meta name = "author" content = "Oreneile Vilankulu">
+		<meta name = "description" content = "My family resturaurant">
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link rel = "icon" href = "vilankulo.webp" type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+		<link rel = "stylesheet" href = "nav.css">
+	<link rel = "stylesheet" href = "contact.css">
+	<link rel = "stylesheet" href = "home.css">
+	<link rel = "stylesheet" href = "product.css">
+	<style>
+
+	 body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+	</style>
+	
+	</head>
+	<body>
+		 <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+  </body>
+		<nav class = "navbar">
+			<div class = "nav">
+				<img src = "fashion.jpg" class = "brand-logo" alt = "error">
+				<div class = "nav-items">
+					<div class = "search">
+						<input type = "text" class = "search-box" placeholder= "search brand,product">
+						<button class = "search-btn">Search</button>
+					</div>
+					<a href="#"><img src = "profile.png" alt = "error"></a>
+					<a href = "#"><img src = "cart.jpg" alt ="error"></a>
+				</div>
+			</div>
+		<ul class = "container">
+			<li class = "link-item"><a href = "index.html" class = "link">Home</a></li>
+			<li class = "link-item"><a href = "product.html" class = "link">Women</a></li>
+			<li class = "link-item"><a href = "men.html" class = "link">Men</a></li>
+			<li class = "link-item"><a href = "kids.html" class = "link">Kids</a></li>
+			<li class = "link-item"><a href = "accesories.html" class = "link">accesories</a></li>
+			<li class = "link-item"><a href = "swimwears.html" class = "link">swimwears</a></li>
+			<li class = "link-item"><a href = "contact.html" class = "link">contact</a></li>
+		</ul>
+		</nav>
+		
+		
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">B120 Robega section</div>
+          <div class="text-two">Chaneng</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">0614658122</div>
+          <div class="text-two">0114567866</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">fashion0731@gmail.com</div>
+          <div class="text-two">info.fashion0731@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you want to trace your shipment.<br> Thanks for shopping with us</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+	  </div>
+</div>
+
+</body>
+</html>									
+											
+											
+											
+											
+											
+											
+											
+											

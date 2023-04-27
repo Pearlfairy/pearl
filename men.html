@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FASHION</title>
+		<meta name = "author" content = "Oreneile Vilankulu">
+		<meta name = "description" content = "My family resturaurant">
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link rel = "icon" href = "vilankulo.webp" type = "image/x-icon">
+		<link rel = "stylesheet" href = "nav.css">
+		<link rel = "stylesheet" href = "product.css">
+	</head>
+	<body>
+		 <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+  </body>
+			<nav class = "navbar">
+			<div class = "nav">
+				<img src = "fashion.jpg" class = "brand-logo" alt = "error">
+				<div class = "nav-items">
+					<div class = "search">
+						<input type = "text" class = "search-box" placeholder= "search brand,product">
+						<button class = "search-btn">Search</button>
+					</div>
+					<a href="#"><img src = "profile.png" alt = "error"></a>
+					<a href = "#"><img src = "cart.jpg" alt ="error"></a>
+				</div>
+			</div>
+		<ul class = "container">
+			<li class = "link-item"><a href = "index.html" class = "link">Home</a></li>
+			<li class = "active"><a href = "product.html" class = "link">Women</a></li>
+			<li class = "link-item"><a href = "men.html" class = "link">Men</a></li>
+			<li class = "link-item"><a href = "kids.html" class = "link">Kids</a></li>
+			<li class = "link-item"><a href = "accesories.html" class = "link">accesories</a></li>
+			<li class = "link-item"><a href = "swimwears.html" class = "link">swimwears</a></li>
+			<li class = "link-item"><a href = "contact.html" class = "link">contact</a></li>
+		</ul>
+		</nav>
+		<div class = " header">
+			<p class = "logo">FASHION</p>
+			<div class = "cart"><i class="fa-solid fa-cart-shopping"></i><p id = "count">0</p> </div>
+		</div>
+		<div class = "container">
+			<div id = "root"></div>
+			<div class = "sidebar">
+				<div class = "head"><p>My Cart</p></div>
+				<div id = "cartItem">Your cart is empty</div>
+				<div class = "foot">
+					<h3>Total</h3>
+					<h2 id = "total">R 0.00</h2>
+				</div>
+			</div>
+		</div>
+		<script src = "men.js"></script>
+	</body>
+</html>
+	
